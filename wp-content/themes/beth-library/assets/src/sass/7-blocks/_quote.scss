@@ -1,0 +1,15 @@
+/* stylelint-disable */
+.editor-styles-wrapper .wp-block-quote,
+.wp-block-quote {
+	&.is-style-layout-dark-background{
+      color: aquamarine;
+      background: darkslategray;
+	}
+
+   &.is-style-layout-light-background{
+      color: #333;
+      background: #a3b5be;
+	}
+}
+
+/* stylelint-enable */

@@ -1,0 +1,38 @@
+button {
+   max-width: 100%;
+   display: inline-block;
+   justify-content: center;
+   align-items: center;
+   padding: 12px 24px;
+   border: none;
+   // width: 123px;
+   height: 48px;
+   border-radius: 8px;
+   cursor: pointer;
+   transition-duration: 0.3s;
+   transform: translateZ(0);
+   box-shadow: inset 0 0 0 0 #ececec, 0 0 1px transparent;
+
+   &:before {
+      content: '';
+      position: absolute;
+      border: #4CC27B solid 1px;
+      border-radius: 8px;
+      top: -16px;
+      right: -16px;
+      bottom: -16px;
+      left: -16px;
+      opacity: 0;
+      transition-duration: .3s;
+      transition-property: top right bottom left;
+
+   }
+
+   &:hover:before {
+      top: -5px;
+      right: -5px;
+      bottom: -5px;
+      left: -5px;
+      opacity: 1;
+   }
+}

@@ -1,0 +1,71 @@
+/*!***************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js!./src/sass/blocks.scss ***!
+  \***************************************************************************************************************/
+/*---------------------------------
+		Colors Variables
+-----------------------------------*/
+/*---------------------------------
+		Opacity
+-----------------------------------*/
+/*---------------------------------
+		Gradient
+-----------------------------------*/
+/*---------------------------------
+		Element Colors
+-----------------------------------*/
+/*---------------------------------
+		Border Colors
+-----------------------------------*/
+.beth-icon-heading {
+  background: red;
+  align-self: center;
+}
+
+.beth-dos-dont__list {
+  background-color: yellow;
+}
+
+/* stylelint-disable */
+.editor-styles-wrapper .wp-block-quote.is-style-layout-dark-background,
+.wp-block-quote.is-style-layout-dark-background {
+  color: aquamarine;
+  background: darkslategray;
+}
+.editor-styles-wrapper .wp-block-quote.is-style-layout-light-background,
+.wp-block-quote.is-style-layout-light-background {
+  color: #333;
+  background: #a3b5be;
+}
+
+/* stylelint-enable */
+.hhh {
+  border: 2px solid #333;
+}
+
+.block-style {
+  min-height: 100px;
+  padding: 48px 48px 0 48px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: white;
+  color: black;
+}
+
+.cta-colClassName {
+  position: relative;
+}
+
+.beth-dos-dont__heading {
+  position: absolute;
+}
+
+.beth-dos-dont__para {
+  position: relative;
+}
+
+.beth-dos-dont__btn {
+  position: relative;
+}
+
+/*# sourceMappingURL=blocks.css.map*/
