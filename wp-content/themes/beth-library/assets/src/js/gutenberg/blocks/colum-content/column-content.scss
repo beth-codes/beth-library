@@ -1,7 +1,7 @@
 
 // @import "../gutenberg_block";
 
-.column-content {
+.column-countent-block {
     margin-left: -1rem;
     margin-right: -1rem;
 
@@ -19,7 +19,7 @@
             padding-bottom: 133.333%;
         }
     }
-    .content-lockup {
+    .column-countent-item {
         margin: 1rem;
         width: calc(33.333% - 2rem - 1px);
 
@@ -31,48 +31,52 @@
             position: relative;
             height: 0;
         }
+
+        .column-countent-article .button-container{
+         display: flex;
+         gap: 1rem;
+        }
       //   p {
       //       @include size-S;
       //   }
     }
 }
 
-// .mobile-scroll {
-//     @include breakpoint(XS) {
-//         overflow: scroll;
-//         scroll-snap-type: x proximity;
-//         flex-wrap: nowrap;
-//         justify-content: unset;
-//         align-items: unset;
-//         // this stops the scroll bar from overlapping the items
-//         padding-bottom: 1rem;
-//         margin-bottom: -1rem;
+.mobile-scroll {
+   @media only screen and (max-width: 600px) {
+        overflow: scroll;
+        scroll-snap-type: x proximity;
+        flex-wrap: nowrap;
+        justify-content: unset;
+        align-items: unset;
+        // this stops the scroll bar from overlapping the items
+        padding-bottom: 1rem;
+        margin-bottom: -1rem;
 
-//         .cta,
-//         .content-lockup {
-//             flex-grow: unset;
-//             flex-shrink: 0;
-//             margin: 0 1rem 0 0;
-//             width: 18rem;
-//             scroll-snap-align: center;
+        .column-countent-item {
+            flex-grow: unset;
+            flex-shrink: 0;
+            margin: 0 1rem 0 0;
+            width: 18rem;
+            scroll-snap-align: center;
 
-//             &:first-child {
-//                 margin-left: 2rem;
-//             }
-//         }
-//         .cta.compact {
-//             width: calc(50% - 3rem - 1px);
+            &:first-child {
+                margin-left: 2rem;
+            }
+        }
+        .cta.compact {
+            width: calc(50% - 3rem - 1px);
 
-//             &:first-child {
-//                 margin-left: 2.5rem;
-//             }
-//         }
-//         &:after {
-//             content:"";
-//             padding-right: 1rem;
-//         }
-//         [data-aos^=fade][data-aos^=fade] {
-//             transform: none !important;
-//         }
-//     }
-// }
+            &:first-child {
+                margin-left: 2.5rem;
+            }
+        }
+        &:after {
+            content:"";
+            padding-right: 1rem;
+        }
+        [data-aos^=fade][data-aos^=fade] {
+            transform: none !important;
+        }
+    }
+}

@@ -7,5 +7,6 @@
  */
 get_header();
  ?>
-
- <div>Single Page</div>
+   <?php the_content(); ?>
+<?php
+ get_footer();

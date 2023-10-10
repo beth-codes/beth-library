@@ -34,7 +34,8 @@ namespace Beth_Theme\Inc;
       wp_register_style( 'slick-css', BETH_BUILD_LIB_URI . '/css/slick.css', [], false, 'all' );
 		wp_register_style( 'slick-theme-css', BETH_BUILD_LIB_URI . '/css/slick-theme.css', ['slick-css'], false, 'all' );
         // enqueue registered style file
-      wp_enqueue_style( 'style-css' ); wp_enqueue_style( 'main-css' );
+      wp_enqueue_style( 'style-css' ); 
+      wp_enqueue_style( 'main-css' );
       wp_enqueue_style( 'slick-css' );
 		wp_enqueue_style( 'slick-theme-css' );
    }

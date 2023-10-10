@@ -21,3 +21,11 @@ object {
 .site-content {
 	word-wrap: break-word;
 }
+
+.wp-block-columns, .wp-block-image{
+   margin: 0;
+}
+
+.wp-block-columns.is-layout-flex{
+   gap: 0;
+}

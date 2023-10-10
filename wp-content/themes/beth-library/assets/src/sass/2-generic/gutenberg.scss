@@ -2,12 +2,13 @@
 	.entry-content {
 
 		> * {
-			margin: $margin-top auto $margin-bottom auto;
+			// margin: $margin-top auto $margin-bottom auto;
+         padding-block: $padding-block;
 		}
 
 		> *:not(.alignfull) {
-			max-width: $site_width;
-			padding: 0 $padding-right 0 $padding-left;
+			// max-width: $site_width;
+			padding-inline: $padding-inline;
 		}
 
 		> .alignwide {

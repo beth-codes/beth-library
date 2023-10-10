@@ -11,10 +11,31 @@ $mq-breakpoints: (
 	xlarge: 1240px
 ) !default;
 
-$site_width: 1140px;
-$wide_width: 1240px;
-$padding-left: 15px;
-$padding-right: 15px;
+$breakpoints: (
+    'XXS': ( max-width:  30em ),
+    'XS': ( max-width:  40em ),
+    'XS-up': ( min-width:  641px ),
+    'S': ( max-width:  48em ),
+    'S-up': ( min-width: 769px ),
+    'M': ( max-width:  64em ),
+    'M-up': ( min-width:  64em ),
+    'ML': ( max-width:  75em ),
+    'ML-up': ( min-width:  75em ),
+    'L': ( max-width: 91em ),
+    'XL': ( min-width: 91em ),
+    'XXL': ( min-width: 105em ),
+    'XXXL': ( min-width: 112em )
+);
 
-$margin-top: 60px;
-$margin-bottom: 60px;
+// $site_width: 1140px;
+$wide_width: 1240px;
+$padding-block: 4rem;
+$padding-inline: 7rem;
+$padding-left: 7rem;
+$padding-right: 7rem;
+
+$padding-top: 4rem;
+$padding-bottom: 4rem;
+
+// $margin-top: 60px;
+// $margin-bottom: 60px;

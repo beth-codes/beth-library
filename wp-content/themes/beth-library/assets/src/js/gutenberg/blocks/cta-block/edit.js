@@ -1,7 +1,5 @@
-
-import { useBlockProps, useInnerBlocksProps } from '@wordpress/block-editor';
 import { InnerBlocks } from '@wordpress/block-editor';
-import { blockColumns } from './templates';
+
 /**
  * Block Edit Component
  *
@@ -14,69 +12,32 @@ const BockEdit = (colClassName) => {
       'core/columns',
       'core/column',
       'core/heading',
-      'wp-gb/inner-blocks',
       'core/button'
    ];
 
-   //Rewritten with loop below
-   // const TEMPLATE = [
-
-   //    ['core/columns', { className: 'cta-blocjs' }, [
-   //       ['core/column', { className: 'cta-colClassName' }, [
-   //          ['core/image', {className: 'beth-dos-dont__heading'}],
-   //          ['core/paragraph', {
-   //             placeholder: 'Enter side content...', className: 'beth-dos-dont__heading',
-   //          }],
-   //          ['core/button', {
-   //             placeholder: 'Button Text...', className: 'beth-dos-dont__btn'
-   //          }],
-   //       ]],
-
-   //       ['core/column', { className: 'cta-colClassName' }, [
-   //          ['core/image'],
-   //          ['core/paragraph', {
-   //             placeholder: 'Enter side content...'
-   //          }],
-   //          ['core/button', {
-   //             placeholder: 'Button Text...'
-   //          }],
-   //       ]],
-
-
-   //       ['core/column', { className: 'cta-colClassName' }, [
-   //          ['core/heading', {
-   //             level: 3,
-   //             placeholder: 'Enter side title...'
-   //          }],
-   //          ['core/paragraph', {
-   //             placeholder: 'Enter side content...'
-   //          }],
-   //          ['core/button', {
-   //             placeholder: 'Button Text...'
-   //          }],
-   //       ]],
-   //    ]]
-   //    ,
-   // ]
-
    const TEMPLATE = [
-      ["core/columns", { className: 'cta-blocjs' },
+      ["core/columns", { className: 'cta-blocks' },
          Array.from({ length: 3 }, () =>
-            ['core/column', { className: 'cta-colClassName' }, [
-               ['core/image', { className: 'beth-dos-dont__heading' }],
-               ['core/paragraph', { placeholder: 'Enter side content...', className: 'beth-dos-dont__para' }],
-               ['core/button', { placeholder: 'Button Text...', className: 'beth-dos-dont__btn' }],
+            ['core/column', { className: 'cta' }, [
+               ['core/image', { className: 'cta-img img' }],
+               ['core/column', {className: 'cta-inner'}, [
+                  ['core/paragraph', { placeholder: 'Overline', className: 'overline' }],
+                  ['core/paragraph', { placeholder: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.', className: 'cta-title' }],
+                  ['core/button', { placeholder: 'Button Text', className: 'button' }],
+               ]]
+               
             ]]
          )
       ],
    ];
 
    return (
-      <div className='hhh'>
+      <div className='block-container'>
          <InnerBlocks
             allowedBlocks={ALLOWED_BLOCKS}
             template={TEMPLATE}
             templateLock="insert"
+            
          />
       </div>
    )

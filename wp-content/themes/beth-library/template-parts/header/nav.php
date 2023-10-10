@@ -111,7 +111,7 @@ $header_menus=wp_get_nav_menu_items($header_menu_id);
             </button>
          </div>
       </nav>
-      <div class="header-desc">
+      <!-- <div class="header-desc">
          <svg height="40px" width="40px" version="1.1" id="_x32_" xmlns="http://www.w3.org/2000/svg"
             xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 512 512" xml:space="preserve" fill="#de135c">
             <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
@@ -156,7 +156,7 @@ $header_menus=wp_get_nav_menu_items($header_menu_id);
          <button class="btn-white">
             button
          </button>
-      </div>
+      </div> -->
 
       <?php 
       //displays menu anywhere you put code

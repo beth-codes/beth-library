@@ -1,0 +1,73 @@
+// @import "../gutenberg_block";
+
+.grid-list {
+   //  margin-left: -1.5rem;
+   //  margin-right: -1.5rem;
+    display: flex;
+
+   //  @include breakpoint(XS) {
+   //      margin-left: 0;
+   //      margin-right: 0;
+   //  }
+    .grid-list-item {
+        width: calc(33.333% - 3rem - 1px);
+        text-align: center;
+
+        svg{
+         align-self: center;
+        }
+      //   margin: 1.5rem;
+
+      //   @include breakpoint(XS) {
+      //       width: 100%;
+      //       margin: 0 0 3rem 0;
+
+      //       &:last-child {
+      //           margin-bottom: 0;
+      //       }
+      //   }
+        .list-counter {
+            width: 4.5rem;
+        }
+    }
+    &.half-items {
+        margin-left: -0.75rem;
+        margin-right: -0.75rem;
+
+        .grid-list-item {
+            margin: 0.75rem;
+            width: calc(50% - 1.5rem - 1px);
+
+            // @include breakpoint(XS) {
+            //     text-align: left;
+            // }
+            &.xs-full {
+               //  @include breakpoint(XS) {
+               //      width: calc(100% - 1.5rem - 1px);
+               //  }
+            }
+        }
+        .list-counter {
+            width: 3.5rem;
+        }
+    }
+}
+
+.list-counter {
+    flex-shrink: 0;
+
+    &.numbers {
+      //   @include size-2XL;
+      //   @include color(color, 'accent-primary');
+      color: red;
+        font-weight: 700;
+    }
+    &.icons {
+        svg {
+            // @include color(color, 'accent-primary');
+            color: red;
+            width: 38px;
+            height: 38px;
+        }
+    }
+}

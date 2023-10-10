@@ -323,16 +323,18 @@ table {
 .wp-block-button {
 
 	.wp-block-button__link {
-		border-radius: 0;
-		font-weight: 700;
-		font-size: 16px;
-		line-height: 18px;
-		padding: 20px 24px;
+		// border-radius: 0;
+		// font-weight: 700;
+		// font-size: 16px;
+		// line-height: 18px;
+		// padding: 20px 24px;
+      background: none;
+      color: #000;
 
-		&:hover {
-			background: $gray-200;
-			text-decoration: none;
-		}
+		// &:hover {
+		// 	background: $gray-200;
+		// 	text-decoration: none;
+		// }
 
 	}
 }

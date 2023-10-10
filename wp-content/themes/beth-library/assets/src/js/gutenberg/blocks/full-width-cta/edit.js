@@ -12,32 +12,36 @@ const BockEdit = (className) => {
       'core/paragraph',
       'core/columns',
       'core/heading',
-      'wp-gb/inner-blocks',
       'core/button',
       'core/html'
    ];
 
-   const TEMPLATE = [ [ 'core/columns', {}, [
-      // [ 'core/column', {}, [
-      //    [ 'core/image' ],
-      // ] ],
-      [ 'core/column', {className: 'full-width-cta__wrapper'}, [
-         [ 'core/paragraph', {className: 'mb-1 overline color-accent', placeholder: 'Overline'}],
-         [ 'core/heading', {
-            level: 3, className:'h1',
-            placeholder: 'Enter title...'
-         } ],
-         [ 'core/paragraph', {className: 'subtitle', placeholder: 'Subtitle'}],
-         [ 'core/html', { className: 'content', placeholder: 'Enter side content...'
-         } ],
-         [ 'core/button', {
-            placeholder: 'Button Text...'
-         } ],
+   const TEMPLATE = [ [ 'core/columns', {className: 'full-cta'}, [
+      [ 'core/column', {className: 'full-cta-container'}, [
+         ['core/image', {className: 'block-bg-img'}],
+
+         ['core/column', {className: 'full-cta-content'}, [
+            [ 'core/paragraph', {className: 'mb-1 overline color-accent', placeholder: 'Overline'}],
+            [ 'core/heading', {
+               level: 2, className:'h1',
+               placeholder: 'Title'
+            } ],
+            [ 'core/paragraph', {className: 'subtitle', placeholder: 'Subtitle'}],
+            [ 'core/html', { className: 'full-cta-text', placeholder: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.'
+            } ],
+            ['core/column', {className: 'buttons button-container'},  Array.from({ length: 2 }, () =>
+            [ 'core/button', {
+               className: 'button',
+               placeholder: 'Button Text...'
+            } ],
+            )],
+            
+         ]]
       ] ],
    ] ] ];
 
    return (
-      <div className='hhh'>
+      <div className='block-container'>
          <InnerBlocks
          className = {className}
             allowedBlocks={ ALLOWED_BLOCKS }

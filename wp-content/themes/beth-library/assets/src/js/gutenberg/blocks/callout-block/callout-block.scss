@@ -1,0 +1,59 @@
+
+.callouts {
+    margin-left: auto;
+    margin-right: auto;
+    flex-direction: column;
+    gap: 1.25rem;
+    position: relative;
+    width: 100%;
+}
+
+.callout {
+   //  margin-bottom: 1.5rem;
+    padding: 2.125rem 2rem;
+    width: 65%;
+    will-change: transform;
+    margin: auto !important;
+   //  background-color: var(--card-color-background);
+
+    &:last-child {
+        margin-bottom: 0;
+    }
+   //  @include breakpoint(XS) {
+   //      padding: 1.5rem 1.125rem;
+   //  }
+    header {
+        padding-right: 2rem;
+    }
+    header,
+    span {
+        position: relative;
+        z-index: 3;
+    }
+    img {
+        z-index: 1;
+        height: 14rem;
+        object-fit: cover;
+    }
+    &.theme__card--image {
+        &:after {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: 2;
+            // @extend %nav-transition;
+            // background: $color-body;
+            mix-blend-mode: multiply;
+            opacity: 0.4;
+        }
+        .button {
+            z-index: 5;
+        }
+    }
+    &:hover {
+        transform: translateX(0.25rem);
+    }
+}

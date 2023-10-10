@@ -1,0 +1,35 @@
+// @import "../gutenberg_block";
+
+.compact-cta-blocks {
+   margin-left: -0.5rem;
+   margin-right: -0.5rem;
+   max-width: 100%;
+   gap: 1rem;
+   display: flex;
+   justify-content: center;
+   align-self: center;
+
+   .compact-container{
+    width: calc(100% / 6);
+    position: relative;
+    display: flex;
+    align-items: center;
+
+    .img{
+       object-fit: contain;
+       position: absolute;
+    }
+
+    .compact-article{
+      position: relative;
+      text-align: center;
+      // top: 20%;
+    }
+   }
+
+ //   @include breakpoint(XS) {
+ //       margin-left: 0;
+ //       margin-right: 0;
+ //   }
+
+}
